@@ -45,7 +45,7 @@ $isAdmin = $loggedIn && isAdmin();
     </header>
 
     <?php if ($loggedIn): ?>
-        <p class="text-sm text-right">ようこそ、<a href="/gs_php/php04/kadai/mypage/" class="text-sky-500 transition duration-100 hover:text-sky-700 active:text-sky-800"><?= h($_SESSION['name'])?></a>さん</p>
+        <p class="youkoso text-sm text-right">ようこそ、<a href="/gs_php/php04/kadai/mypage/" class="text-sky-500 transition duration-100 hover:text-sky-700 active:text-sky-800"><?= h($_SESSION['name'])?></a>さん</p>
     <?php endif; ?>
 
   </div>

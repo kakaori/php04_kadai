@@ -58,7 +58,7 @@ $json = json_encode($values,JSON_UNESCAPED_UNICODE);
     </div>
 
 
-    <p class="mb-4 text-center text-xl md:mb-6 lg:text-xl"><?= h($_SESSION['name'])?>さんの日記一覧</p>
+    <p class="mb-4 text-center text-xl font-semibold md:mb-6 lg:text-xl"><?= h($_SESSION['name'])?>さんの日記一覧</p>
     <div class="w-full mx-auto overflow-auto">
         <table class='mb-4 table-auto w-full text-left whitespace-no-wrap'>
             <tr>
@@ -87,7 +87,8 @@ $json = json_encode($values,JSON_UNESCAPED_UNICODE);
 
     </div>
 
-    <div><img class="m-auto" src="/gs_php/php04/kadai/img/cool_geek_actwithpassion.png" alt=""></div>
+    <a href="/gs_php/php04/kadai/mypage/detail/?id=<?=$id?>" class="inline-block rounded-lg bg-gray-100 mt-8 px-8 py-3 text-center text-sm outline-none transition duration-200 hover:bg-gray-200 focus-visible:ring active:bg-gray-300 md:text-base">ユーザー情報</a>
+
 </div>
 
 <!-- popalert -->

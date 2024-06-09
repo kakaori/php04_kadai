@@ -1,4 +1,4 @@
-<?php $title = 'GEEK日記詳細｜LAB17 GEEK日記'; ?>
+<?php $title = '日記の詳細・編集｜LAB17 GEEK日記'; ?>
 <?php include($_SERVER['DOCUMENT_ROOT'] . '/gs_php/php04/kadai/inc/header.php'); ?>
 <?PHP
 // LOGINチェック
@@ -60,8 +60,8 @@ if ($_SESSION["id"] != $row['userid']) {
       <!-- ニックネーム -->
       <div class="sm:col-span-2">
         <label for="name" class="mb-2 inline-block text-sm sm:text-base">ニックネーム ※変更できません</label>
-        <input name="name" value="<?= h($row["name"]) ?>" class="w-full rounded border px-3 py-3 outline-none" disabled />
-        <input name="name" type="hidden" value="<?= h($row["name"]) ?>">
+        <input name="name" value="<?= h($_SESSION['name'])?>" class="w-full rounded border px-3 py-3 outline-none" disabled />
+        <input name="name" type="hidden" value="<?= h($_SESSION['name'])?>">
       </div>
 
       <!-- クレド -->

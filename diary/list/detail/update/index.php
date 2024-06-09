@@ -1,4 +1,4 @@
-<?php $title = 'GEEK日記詳細｜LAB17 GEEK日記'; ?>
+<?php $title = '日記の更新が完了しました｜LAB17 GEEK日記'; ?>
 <?php include($_SERVER['DOCUMENT_ROOT'] . '/gs_php/php04/kadai/inc/header.php'); ?>
 <?php
 // 完了画面に直接アクセスされた場合にリダイレクト
@@ -115,8 +115,12 @@ if($status==false){
         <p class="text-gray-600"><?php echo $cosmos?></p>
       </div>
       <!-- review - end -->
-
     </div>
+
+    <div class="text-center">
+      <a href="/gs_php/php04/kadai/mypage/" class="w-64 inline-block rounded-lg bg-sky-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-sky-300 transition duration-100 hover:bg-sky-600 focus-visible:ring active:bg-sky-700 md:text-base">マイページ</a>
+    </div>
+
 </div>
 
 <?php include($_SERVER['DOCUMENT_ROOT'] . '/gs_php/php04/kadai/inc/footer.php'); ?>

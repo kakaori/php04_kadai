@@ -2,7 +2,7 @@
 session_start();
 
 //POST値
-$name   = $_POST["name"]; //lid
+$name   = $_POST["name"];
 $lpw    = $_POST["lpw"]; //lpw
 
 //1.  DB接続します

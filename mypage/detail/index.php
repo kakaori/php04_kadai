@@ -1,4 +1,4 @@
-<?php $title = 'ユーザー詳細｜LAB17 GEEK日記'; ?>
+<?php $title = 'ユーザー情報｜LAB17 GEEK日記'; ?>
 <?php include($_SERVER['DOCUMENT_ROOT'] . '/gs_php/php04/kadai/inc/header.php'); ?>
 <?PHP 
 // LOGINチェック
@@ -36,15 +36,13 @@ $row = $stmt -> fetch();
     <!-- text - start -->
     <div class="mb-10 md:mb-16">
     <p class="mb-4 text-center text-xl text-sky-500 md:mb-6 lg:text-xl">LAB17 GEEK日記</p>
-    <h2 class="mb-4 text-center text-2xl font-bold md:mb-8 lg:text-3xl xl:mb-12">ユーザー詳細</h2>
+    <h2 class="mb-4 text-center text-2xl font-bold md:mb-8 lg:text-3xl xl:mb-12">ユーザー情報</h2>
     </div>
     <!-- text - end -->
 
     <?php if ($loggedIn): ?>
-        <?php if ($isAdmin): ?>
-
         <!-- form - start -->
-        <form action="/gs_php/php04/kadai/user/detail/update/" method="post" class="mx-auto grid max-w-screen-md gap-4 sm:grid-cols-2">
+        <form action="/gs_php/php04/kadai/mypage/detail/update/" method="post" class="mx-auto grid max-w-screen-md gap-4 sm:grid-cols-2">
 
           <!-- ニックネーム -->
           <div class="sm:col-span-2">
@@ -52,22 +50,16 @@ $row = $stmt -> fetch();
             <input name="name" type="text" value="<?= h($row["name"]) ?>" class="w-full rounded border bg-sky-50 px-3 py-3 outline-none ring-sky-300 transition duration-100 focus:ring" required />
           </div>
 
+          <!-- パスワード -->
+          <div class="sm:col-span-2">
+            <label for="lid" class="mb-2 inline-block text-sm sm:text-base">パスワード</label>
+            <input name="lid" type="password" class="w-full rounded border bg-sky-50 px-3 py-3 outline-none ring-sky-300 transition duration-100 focus:ring" required />
+          </div>
+
           <!-- 受講番号 -->
           <div class="sm:col-span-2">
             <label for="number" class="mb-2 inline-block text-sm sm:text-base">受講番号</label>
             <input name="number" type="text" inputmode="numeric" maxlength="2" pattern="^[0-9]+$" value="<?= h($row["number"]) ?>" class="w-full rounded border bg-sky-50 px-3 py-3 outline-none ring-sky-300 transition duration-100 focus:ring" required />
-          </div>
-
-          <!-- 管理者 -->
-          <div class="sm:col-span-2">
-            <label for="kanri_flg" class="mb-2 inline-block text-sm sm:text-base">管理者（0:一般、1:管理者）</label>
-            <input name="kanri_flg" type="text" inputmode="numeric" maxlength="1" pattern="^[0-9]+$" value="<?= h($row["kanri_flg"]) ?>" class="w-full rounded border bg-sky-50 px-3 py-3 outline-none ring-sky-300 transition duration-100 focus:ring" required />
-          </div>
-
-          <!-- アカウント -->
-          <div class="sm:col-span-2">
-            <label for="life_flg" class="mb-2 inline-block text-sm sm:text-base">アカウント（0:使用中、1:除籍）</label>
-            <input name="life_flg" type="text" inputmode="numeric" maxlength="1" pattern="^[0-9]+$" value="<?= h($row["kanri_flg"]) ?>" value="<?= h($row["life_flg"]) ?>" class="w-full rounded border bg-sky-50 px-3 py-3 outline-none ring-sky-300 transition duration-100 focus:ring" required />
           </div>
 
           <input type="hidden" name="id" value="<?= $row["id"] ?>">
@@ -78,9 +70,8 @@ $row = $stmt -> fetch();
         </form>
         <!-- form - end -->
 
-        <?php else: ?>
-          <p class="text-center">ユーザーリストは、管理者にのみ表示されます。</p>
-        <?php endif; ?>
+        <p class="mt-8 text-sm text-gray-400">アカウントを削除したい場合は管理者までご連絡ください。</p>
+
     <?php endif; ?>
 </div>
 
