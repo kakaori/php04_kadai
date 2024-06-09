@@ -5,7 +5,7 @@
     <!-- text - start -->
     <div class="mb-10 md:mb-16">
       <p class="mb-4 text-center text-xl text-sky-500 md:mb-6 lg:text-xl">LAB17 GEEK日記</p>
-      <h2 class="mb-4 text-center text-2xl font-bold md:mb-8 lg:text-3xl xl:mb-12">新規ユーザー登録</h2>
+      <h2 class="mb-4 text-center text-2xl font-bold md:mb-8 lg:text-3xl xl:mb-12">新規登録</h2>
     </div>
     <!-- text - end -->
 

@@ -2,7 +2,7 @@
   <div class="flex flex-col items-center border-t border-b py-6">
     <!-- nav - start -->
     <nav class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm md:justify-start md:gap-6">
-      <a href="/gs_php/php04/kadai/signup/" class="text-gray-300 transition duration-100 hover:text-sky-500 active:text-sky-600">ユーザー登録</a>
+      <a href="/gs_php/php04/kadai/signup/" class="text-gray-300 transition duration-100 hover:text-sky-500 active:text-sky-600">新規登録</a>
       <a href="/gs_php/php04/kadai/login/" class="text-gray-300 transition duration-100 hover:text-sky-500 active:text-sky-600">ログイン</a>
       <a href="/gs_php/php04/kadai/mypage/" class="text-gray-300 transition duration-100 hover:text-sky-500 active:text-sky-600">マイページ</a>
       <a href="/gs_php/php04/kadai/user/" class="text-gray-300 transition duration-100 hover:text-sky-500 active:text-sky-600">ユーザーリスト</a>
