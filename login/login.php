@@ -39,7 +39,10 @@ if($pw){
   redirect("/gs_php/php04/kadai/mypage/");
 }else{
   //Login失敗時(login.phpへ)
-  redirect("/gs_php/php04/kadai/login/");
+  echo "<script>
+  alert('ニックネームかパスワードが違います。');
+  window.location.href = '/gs_php/php04/kadai/login/';
+  </script>";
 }
 
 exit();
