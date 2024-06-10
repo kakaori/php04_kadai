@@ -26,7 +26,7 @@ $weekdate = date('w');
     <!-- text - end -->
 
     <!-- form - start -->
-    <form action="/gs_php/php04/kadai/diary/insert/" method="post" class="mx-auto grid max-w-screen-md gap-4 sm:grid-cols-2">
+    <form action="/gs_php/php04/kadai/diary/insert/" method="post" class="mx-auto grid max-w-screen-md gap-4">
 
       <!-- ニックネーム --><!-- 課題：ログインした名前にする -->
       <div class="sm:col-span-2">
@@ -38,15 +38,15 @@ $weekdate = date('w');
       <!-- クレド -->
       <div class="sm:col-span-2">
         <label for="credo" class="mb-2 inline-block text-sm sm:text-base">CREDOに則り、自らのチカラでセカイを変えようとする全ての挑戦を讃えましたか？</label>
-          <div class="flex justify-between grid gap-x-2 gap-y-4 grid-cols-3 md:gap-x-8">
+          <div class="flex grid gap-x-2 md:gap-y-4 md:grid-cols-3 md:gap-x-8">
             <div>
-              <label class="ring-gray-200 has-[:checked]:ring-sky-500 has-[:checked]:bg-sky-50 grid grid-cols-[5px_1fr_auto] items-center text-center gap-2 rounded-lg p-4 ring-2 hover:bg-sky-50 cursor-pointer mb-2 md:gap-6 md:text-left"><input type="radio" name="credo" value="讃えた" class="box-content h-1.5 w-1.5 appearance-none rounded-full border-[5px] ring-1 ring-sky-950/10 checked:border-sky-500 checked:ring-sky-500" required>讃えた</label>
+              <label class="ring-gray-200 has-[:checked]:ring-sky-500 has-[:checked]:bg-sky-50 grid grid-cols-[5px_1fr_auto] items-center gap-6 rounded-lg p-4 ring-2 hover:bg-sky-50 cursor-pointer mb-2"><input type="radio" name="credo" value="讃えた" class="box-content h-1.5 w-1.5 appearance-none rounded-full border-[5px] ring-1 ring-sky-950/10 checked:border-sky-500 checked:ring-sky-500" required>讃えた</label>
             </div>
             <div>
-              <label class="ring-gray-200 has-[:checked]:ring-sky-500 has-[:checked]:bg-sky-50 grid grid-cols-[5px_1fr_auto] items-center text-center gap-2 rounded-lg p-4 ring-2 hover:bg-sky-50 cursor-pointer mb-2 md:gap-6 md:text-left"><input type="radio" name="credo" value="はい" class="box-content h-1.5 w-1.5 appearance-none rounded-full border-[5px] ring-1 ring-sky-950/10 checked:border-sky-500 checked:ring-sky-500" required>はい</label>
+              <label class="ring-gray-200 has-[:checked]:ring-sky-500 has-[:checked]:bg-sky-50 grid grid-cols-[5px_1fr_auto] items-center gap-6 rounded-lg p-4 ring-2 hover:bg-sky-50 cursor-pointer mb-2"><input type="radio" name="credo" value="はい" class="box-content h-1.5 w-1.5 appearance-none rounded-full border-[5px] ring-1 ring-sky-950/10 checked:border-sky-500 checked:ring-sky-500" required>はい</label>
             </div>
             <div>
-              <label class="ring-gray-200 has-[:checked]:ring-sky-500 has-[:checked]:bg-sky-50 grid grid-cols-[5px_1fr_auto] items-center text-center gap-2 rounded-lg p-4 ring-2 hover:bg-sky-50 cursor-pointer mb-2 md:gap-6 md:text-left"><input type="radio" name="credo" value="Yes" class="box-content h-1.5 w-1.5 appearance-none rounded-full border-[5px] ring-1 ring-sky-950/10 checked:border-sky-500 checked:ring-sky-500" required>Yes</label>
+              <label class="ring-gray-200 has-[:checked]:ring-sky-500 has-[:checked]:bg-sky-50 grid grid-cols-[5px_1fr_auto] items-center gap-6 rounded-lg p-4 ring-2 hover:bg-sky-50 cursor-pointer mb-2"><input type="radio" name="credo" value="Yes" class="box-content h-1.5 w-1.5 appearance-none rounded-full border-[5px] ring-1 ring-sky-950/10 checked:border-sky-500 checked:ring-sky-500" required>Yes</label>
             </div>
           </div>
       </div>
@@ -54,15 +54,15 @@ $weekdate = date('w');
       <!-- コミュニティ -->
       <div class="sm:col-span-2">
         <label for="community" class="mb-2 inline-block text-sm sm:text-base">コミュニティの活性化に自ら貢献しましたか？</label>
-          <div class="flex justify-between grid gap-x-2 gap-y-4 grid-cols-3 md:gap-x-8">
+          <div class="flex grid gap-x-2 md:gap-y-4 md:grid-cols-3 md:gap-x-8">
             <div>
-              <label class="ring-gray-200 has-[:checked]:ring-sky-500 has-[:checked]:bg-sky-50 grid grid-cols-[5px_1fr_auto] items-center text-center gap-2 rounded-lg p-4 ring-2 hover:bg-sky-50 cursor-pointer mb-2 md:gap-6 md:text-left"><input type="radio" name="community" value="貢献した" class="box-content h-1.5 w-1.5 appearance-none rounded-full border-[5px] ring-1 ring-sky-950/10 checked:border-sky-500 checked:ring-sky-500" required>貢献した</label>
+              <label class="ring-gray-200 has-[:checked]:ring-sky-500 has-[:checked]:bg-sky-50 grid grid-cols-[5px_1fr_auto] items-center gap-6 rounded-lg p-4 ring-2 hover:bg-sky-50 cursor-pointer mb-2"><input type="radio" name="community" value="貢献した" class="box-content h-1.5 w-1.5 appearance-none rounded-full border-[5px] ring-1 ring-sky-950/10 checked:border-sky-500 checked:ring-sky-500" required>貢献した</label>
             </div>
             <div>
-              <label class="ring-gray-200 has-[:checked]:ring-sky-500 has-[:checked]:bg-sky-50 grid grid-cols-[5px_1fr_auto] items-center text-center gap-2 rounded-lg p-4 ring-2 hover:bg-sky-50 cursor-pointer mb-2 md:gap-6 md:text-left"><input type="radio" name="community" value="はい" class="box-content h-1.5 w-1.5 appearance-none rounded-full border-[5px] ring-1 ring-sky-950/10 checked:border-sky-500 checked:ring-sky-500" required>はい</label>
+              <label class="ring-gray-200 has-[:checked]:ring-sky-500 has-[:checked]:bg-sky-50 grid grid-cols-[5px_1fr_auto] items-center gap-6 rounded-lg p-4 ring-2 hover:bg-sky-50 cursor-pointer mb-2"><input type="radio" name="community" value="はい" class="box-content h-1.5 w-1.5 appearance-none rounded-full border-[5px] ring-1 ring-sky-950/10 checked:border-sky-500 checked:ring-sky-500" required>はい</label>
             </div>
             <div>
-              <label class="ring-gray-200 has-[:checked]:ring-sky-500 has-[:checked]:bg-sky-50 grid grid-cols-[5px_1fr_auto] items-center text-center gap-2 rounded-lg p-4 ring-2 hover:bg-sky-50 cursor-pointer mb-2 md:gap-6 md:text-left"><input type="radio" name="community" value="Yes" class="box-content h-1.5 w-1.5 appearance-none rounded-full border-[5px] ring-1 ring-sky-950/10 checked:border-sky-500 checked:ring-sky-500" required>Yes</label>
+              <label class="ring-gray-200 has-[:checked]:ring-sky-500 has-[:checked]:bg-sky-50 grid grid-cols-[5px_1fr_auto] items-center gap-6 rounded-lg p-4 ring-2 hover:bg-sky-50 cursor-pointer mb-2"><input type="radio" name="community" value="Yes" class="box-content h-1.5 w-1.5 appearance-none rounded-full border-[5px] ring-1 ring-sky-950/10 checked:border-sky-500 checked:ring-sky-500" required>Yes</label>
             </div>
           </div>
       </div>
@@ -88,15 +88,15 @@ $weekdate = date('w');
       <!-- コスモ -->
       <div class="sm:col-span-2">
         <label for="cosmos" class="mb-2 inline-block text-sm sm:text-base">コスモは燃えていますか？</label>
-          <div class="flex justify-between grid gap-x-2 gap-y-4 grid-cols-3 md:gap-x-8">
+          <div class="flex grid gap-x-2 md:gap-y-4 md:grid-cols-3 md:gap-x-8">
             <div>
-              <label class="ring-gray-200 has-[:checked]:ring-sky-500 has-[:checked]:bg-sky-50 grid grid-cols-[5px_1fr_auto] items-center text-center gap-2 rounded-lg p-4 ring-2 hover:bg-sky-50 cursor-pointer mb-2 md:gap-6 md:text-left"><input type="radio" name="cosmos" value="燃えている" class="box-content h-1.5 w-1.5 appearance-none rounded-full border-[5px] ring-1 ring-sky-950/10 checked:border-sky-500 checked:ring-sky-500" required>燃えている</label>
+              <label class="ring-gray-200 has-[:checked]:ring-sky-500 has-[:checked]:bg-sky-50 grid grid-cols-[5px_1fr_auto] items-center gap-6 rounded-lg p-4 ring-2 hover:bg-sky-50 cursor-pointer mb-2"><input type="radio" name="cosmos" value="燃えている" class="box-content h-1.5 w-1.5 appearance-none rounded-full border-[5px] ring-1 ring-sky-950/10 checked:border-sky-500 checked:ring-sky-500" required>燃えている</label>
             </div>
             <div>
-              <label class="ring-gray-200 has-[:checked]:ring-sky-500 has-[:checked]:bg-sky-50 grid grid-cols-[5px_1fr_auto] items-center text-center gap-2 rounded-lg p-4 ring-2 hover:bg-sky-50 cursor-pointer mb-2 md:gap-6 md:text-left"><input type="radio" name="cosmos" value="はい" class="box-content h-1.5 w-1.5 appearance-none rounded-full border-[5px] ring-1 ring-sky-950/10 checked:border-sky-500 checked:ring-sky-500" required>はい</label>
+              <label class="ring-gray-200 has-[:checked]:ring-sky-500 has-[:checked]:bg-sky-50 grid grid-cols-[5px_1fr_auto] items-center gap-6 rounded-lg p-4 ring-2 hover:bg-sky-50 cursor-pointer mb-2"><input type="radio" name="cosmos" value="はい" class="box-content h-1.5 w-1.5 appearance-none rounded-full border-[5px] ring-1 ring-sky-950/10 checked:border-sky-500 checked:ring-sky-500" required>はい</label>
             </div>
             <div>
-              <label class="ring-gray-200 has-[:checked]:ring-sky-500 has-[:checked]:bg-sky-50 grid grid-cols-[5px_1fr_auto] items-center text-center gap-2 rounded-lg p-4 ring-2 hover:bg-sky-50 cursor-pointer mb-2 md:gap-6 md:text-left"><input type="radio" name="cosmos" value="Yes" class="box-content h-1.5 w-1.5 appearance-none rounded-full border-[5px] ring-1 ring-sky-950/10 checked:border-sky-500 checked:ring-sky-500" required>Yes</label>
+              <label class="ring-gray-200 has-[:checked]:ring-sky-500 has-[:checked]:bg-sky-50 grid grid-cols-[5px_1fr_auto] items-center gap-6 rounded-lg p-4 ring-2 hover:bg-sky-50 cursor-pointer mb-2"><input type="radio" name="cosmos" value="Yes" class="box-content h-1.5 w-1.5 appearance-none rounded-full border-[5px] ring-1 ring-sky-950/10 checked:border-sky-500 checked:ring-sky-500" required>Yes</label>
             </div>
           </div>
       </div>

@@ -55,7 +55,7 @@ if ($_SESSION["id"] != $row['userid']) {
     <!-- text - end -->
 
     <!-- form - start -->
-    <form action="/gs_php/php04/kadai/diary/list/detail/update/index.php" method="post" class="mx-auto grid max-w-screen-md gap-4 sm:grid-cols-2">
+    <form action="/gs_php/php04/kadai/diary/list/detail/update/index.php" method="post" class="mx-auto grid max-w-screen-md gap-4">
 
       <!-- ニックネーム -->
       <div class="sm:col-span-2">
@@ -67,7 +67,7 @@ if ($_SESSION["id"] != $row['userid']) {
       <!-- クレド -->
       <div class="sm:col-span-2">
         <label for="credo" class="mb-2 inline-block text-sm sm:text-base">CREDOに則り、自らのチカラでセカイを変えようとする全ての挑戦を讃えましたか？</label>
-          <div class="flex justify-between grid gap-x-8 gap-y-4 grid-cols-3">
+          <div class="flex grid gap-x-2 md:gap-y-4 md:grid-cols-3 md:gap-x-8">
             <div>
               <label class="ring-gray-200 has-[:checked]:ring-sky-500 has-[:checked]:bg-sky-50 grid grid-cols-[5px_1fr_auto] items-center gap-6 rounded-lg p-4 ring-2 hover:bg-sky-50 cursor-pointer mb-2"><input type="radio" name="credo" value="讃えた" class="box-content h-1.5 w-1.5 appearance-none rounded-full border-[5px] ring-1 ring-sky-950/10 checked:border-sky-500 checked:ring-sky-500" <?php echo ($row["q1"] === "讃えた") ? 'checked' : ''; ?>>讃えた</label>
             </div>
@@ -83,7 +83,7 @@ if ($_SESSION["id"] != $row['userid']) {
       <!-- コミュニティ -->
       <div class="sm:col-span-2">
         <label for="community" class="mb-2 inline-block text-sm sm:text-base">コミュニティの活性化に自ら貢献しましたか？</label>
-          <div class="flex justify-between grid gap-x-8 gap-y-4 grid-cols-3">
+          <div class="flex grid gap-x-2 md:gap-y-4 md:grid-cols-3 md:gap-x-8">
             <div>
               <label class="ring-gray-200 has-[:checked]:ring-sky-500 has-[:checked]:bg-sky-50 grid grid-cols-[5px_1fr_auto] items-center gap-6 rounded-lg p-4 ring-2 hover:bg-sky-50 cursor-pointer mb-2"><input type="radio" name="community" value="貢献した" class="box-content h-1.5 w-1.5 appearance-none rounded-full border-[5px] ring-1 ring-sky-950/10 checked:border-sky-500 checked:ring-sky-500" <?php echo ($row["q2"] === "貢献した") ? 'checked' : ''; ?>>貢献した</label>
             </div>
@@ -117,7 +117,7 @@ if ($_SESSION["id"] != $row['userid']) {
       <!-- コスモ -->
       <div class="sm:col-span-2">
         <label for="cosmos" class="mb-2 inline-block text-sm sm:text-base">コスモは燃えていますか？</label>
-          <div class="flex justify-between grid gap-x-8 gap-y-4 grid-cols-3">
+          <div class="flex grid gap-x-2 md:gap-y-4 md:grid-cols-3 md:gap-x-8">
             <div>
               <label class="ring-gray-200 has-[:checked]:ring-sky-500 has-[:checked]:bg-sky-50 grid grid-cols-[5px_1fr_auto] items-center gap-6 rounded-lg p-4 ring-2 hover:bg-sky-50 cursor-pointer mb-2"><input type="radio" name="cosmos" value="燃えている" class="box-content h-1.5 w-1.5 appearance-none rounded-full border-[5px] ring-1 ring-sky-950/10 checked:border-sky-500 checked:ring-sky-500" <?php echo ($row["q6"] === "燃えている") ? 'checked' : ''; ?>>燃えている</label>
             </div>
