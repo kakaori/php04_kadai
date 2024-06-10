@@ -21,6 +21,23 @@ $id = $_POST["id"];
 //2.　データベース接続
 $pdo = db_conn();
 
+// ユーザー名が既に存在するかチェック　同じnameは NG
+$name = filter_input(INPUT_POST, "name");
+$checkSql = "SELECT COUNT(*) FROM user_table WHERE name = :name";
+$checkStmt = $pdo->prepare($checkSql);
+$checkStmt->bindValue(':name', $name, PDO::PARAM_STR);
+$checkStmt->execute();
+$count = $checkStmt->fetchColumn();
+
+if ($count > 0) {
+    // ユーザー名が既に存在する場合
+    echo "<script>
+        alert('そのニックネームは既に使用されています。別のニックネームに変更してください。');
+        window.location.href = '/gs_php/php04/kadai/user/detail/?id=$id';
+    </script>";
+    exit; // ここで処理を終了
+}
+
 //３．データ登録SQL作成
 $sql = "UPDATE user_table SET name=:name, number=:number, kanri_flg=:kanri_flg, life_flg=:life_flg WHERE id = :id";
 $stmt = $pdo->prepare($sql);
