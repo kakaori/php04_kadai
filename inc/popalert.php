@@ -1,7 +1,7 @@
 <div id="popalert" class="hidden absolute pt-6 sm:pt-8" style="left:0;top:0;">
   <!-- banner - start -->
   <div class="mx-auto max-w-screen-2xl px-4 pb-4 md:px-8">
-    <div class="relative flex flex-wrap rounded-lg bg-sky-500 opacity-85 px-4 py-3 shadow-lg sm:flex-nowrap sm:items-center sm:justify-center sm:gap-3 sm:pr-8 md:px-8">
+    <div class="relative flex flex-wrap rounded-lg bg-sky-500 opacity-90 px-4 py-3 shadow-lg sm:flex-nowrap sm:items-center sm:justify-center sm:gap-3 sm:pr-8 md:px-8">
       <div class="order-1 inline-block w-11/12 max-w-screen-sm text-sm text-white pr-4 sm:order-none sm:w-auto md:text-base"><?php echo $message; ?></div>
       <!-- close button - start -->
       <div class="order-2 flex w-1/12 items-start justify-end sm:absolute sm:right-0 sm:order-none sm:mr-2 sm:w-auto xl:mr-3">
